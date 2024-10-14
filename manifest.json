@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Hello World Banner",
+  "version": "1.0",
+  "description": "在页面中心显示'Hello World'",
+  "permissions": ["activeTab", "scripting"],
+  "action": {},
+  "background": {
+    "service_worker": "background.js"
+  }
+}

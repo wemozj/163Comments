@@ -65,8 +65,20 @@ function showBanner() {
     
     document.body.appendChild(banner);
 
-    setTimeout(() => {
-      document.body.removeChild(banner);
-    }, 5000);
+    function removeBanner() {
+      if (document.body.contains(banner)) {
+        document.body.removeChild(banner);
+      }
+    }
+
+    banner.addEventListener('mouseenter', () => {
+      clearTimeout(banner.timer);
+    });
+
+    banner.addEventListener('mouseleave', () => {
+      removeBanner();
+    });
+
+    banner.timer = setTimeout(removeBanner, 5000);
   });
 }

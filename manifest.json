@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Hello World Banner",
+  "name": "网抑云热门评论君",
   "version": "1.0",
   "description": "在页面中心显示热门网抑云评论",
   "permissions": ["activeTab", "scripting"],

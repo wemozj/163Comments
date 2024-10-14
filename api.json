@@ -1,0 +1,7 @@
+{
+  "get_163_comment": {
+    "description": "获取网易云音乐的评论",
+    "method": "GET",
+    "url": "https://api.uomg.com/api/comments.163"
+  }
+}

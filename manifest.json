@@ -2,10 +2,18 @@
   "manifest_version": 3,
   "name": "Hello World Banner",
   "version": "1.0",
-  "description": "在页面中心显示'Hello World'",
+  "description": "在页面中心显示热门网抑云评论",
   "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "https://api.uomg.com/*"
+  ],
   "action": {},
   "background": {
-    "service_worker": "background.js"
-  }
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "web_accessible_resources": [{
+    "resources": ["api.json"],
+    "matches": ["<all_urls>"]
+  }]
 }
